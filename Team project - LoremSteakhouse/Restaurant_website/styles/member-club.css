@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*  CSS styling for member-club.html 
+    Developed by: Shijun Wang @ June 8, 2020
+    Re-design: June 27, 2020  
+    Project members: Zongqi Lyu, Zhaohai Meng, Yaguang Liu, Shijun Wang  */ 
+.main_container {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.main_container .login_btn {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.login_btn a{
+    color: #000;
+    font-weight: bold;
+}
+.login_btn a:hover {
+    color: rgba(197, 29, 29, 0.9);
+}
+.content_container {
+    margin: 0 30px 50px 30px;
+    display: flex;
+    justify-content: center;
+}
+.content_container > section {
+    margin: 25px;
+    text-align: center;    
+}
+.content_container h2 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: rgba(197, 29, 29, 0.8);
+    text-shadow: 1px 1px 1px gray;
+}
+.club-image {
+    text-align: center;
+    margin: 5px; 
+    width: 100px; 
+    height: 100px;
+}
+.content_container > section p {
+    text-align: justify;
+    padding: 20px 0;
+    color: rgb(70, 70, 70);
+}
+.club_btn {
+    padding: 10px;
+    background-color: rgba(197, 29, 29, 0.8); 
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    color:#fff;
+    text-decoration: none;  
+}
+.club_btn:hover {
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .content_container {
+        display: block;
+    } 
+}
+@media (max-width: 480px) {
+    .content_container {
+        display: block; 
+    }
+    .club-image {
+        display: none;
+    } 
+}

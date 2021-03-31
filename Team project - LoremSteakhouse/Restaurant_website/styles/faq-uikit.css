@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* UIkit CSS styling for FAQ page
+   Developed by: Shijun Wang @ June 28, 2020 
+   Project members: Zongqi Lyu, Zhaohai Meng, Yaguang Liu, Shijun Wang */ 
+
+
+body {
+    background-color:rgba(0, 0, 0, 0.05);
+}
+header {
+    background-color: #000;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+}
+header .logo a img {
+    width: 100px;
+    height: 50px;
+}
+header .logo a img:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+header .nav a, header .reserve_btn a {
+    color: #fff;
+    text-decoration: none;
+}
+header .nav a:hover {
+    font-weight: bold; 
+}
+header .reserve_btn a {
+    padding: 10px 15px;
+    background-color:#bd2c2e;
+    box-shadow: 1px 1px 5px 1px gray;
+    border-radius: 5px;
+}
+.faq_heading h1 {
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    color: #231b12;
+    border-bottom: 2px solid darkgray;
+    padding-bottom: 10px;
+}
+.uk-card {
+    padding: 20px;
+}
+div.uk-grid.uk-child-width-expand {
+    margin-top: 0px;
+}
+.faq_category {
+    color: #231b12;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.uk-accordion-title {
+    font-style: italic;
+}
+/* adjust footer styling after adopting external footer CSS */
+footer {
+    margin-top: 50px;
+}
+.subscription {
+    padding-bottom: 0;
+}
+footer h6 {
+    margin-top: 11px;
+}
+footer ul {
+    margin: 11px 0;    
+}
+
+@media (max-width:768px) {
+    .faq_heading h1 {
+        font-size: 20px;
+    }
+    .faq_category {
+        font-weight: normal;
+        font-size: 18px;
+    }
+    .uk-card {
+        padding: 10px;
+    }
+
+}

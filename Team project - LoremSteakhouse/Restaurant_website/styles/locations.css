@@ -1,0 +1,372 @@
+#logo {
+    width: 50px;
+    height: 24px;
+    background-image: url("../images/logo_copy.png");
+    background-size: 100% 100%;
+    /* z-index: 2; */
+}
+
+#logo:hover {
+    transform: scale(1.2);
+    opacity: .7;
+}
+
+.navigation {
+    background-color: black;
+    color: white;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: blueviolet;
+}
+
+#reserve_btn {
+    position: absolute;
+    float: right;
+    margin-left: 100px;
+    width: 140px;
+    height: 30px;
+    background-color: #bd2c2e;
+    border: #bd2c2e;
+    box-shadow: 1px 1px 5px 1px gray;
+    right: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+#reserve_btn:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+#background {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/services.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#background:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+}
+
+.info {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 3;
+}
+
+.info h1 {
+    font-style: italic;
+    text-align: center;
+    font-size: 80px;
+    color: brown;
+}
+
+#reservation_form {
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 3;
+}
+
+fieldset {
+    padding: 0 .625em;
+}
+
+#reservation_form label {
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: center;
+    width: 150px;
+    vertical-align: top;
+}
+
+#reservation {
+    margin: 0 auto;
+    float: none;
+    width: 900px;
+    color: white;
+    text-align: center;
+}
+
+#reserve_legend {
+    font-size: 30px;
+    text-align: center;
+}
+
+#reserve_legend input {
+    width: 30%;
+}
+
+#reserve_submit {
+    margin: 10px 0 0 0;
+    background-color: #bd2c2e;
+    border: #bd2c2e;
+    box-shadow: 1px 1px 5px 1px gray;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#container {
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+#search {
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+#searchTable th,
+#searchTable td {
+    width: 500px;
+    padding: 10px;
+}
+
+.divMap>img {
+    width: 100%;
+}
+
+#footer {
+    background-color: black;
+    padding-top: 20px;
+}
+
+#subscription {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(214, 207, 207);
+}
+
+#subscription fieldset {
+    border: 1px solid grey;
+    height: 70px;
+}
+
+#subscription input:first-of-type {
+    width: 300px;
+    height: 33px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px grey;
+    padding-left: 10px;
+}
+
+#subscription input:last-of-type {
+    width: 80px;
+    height: 36px;
+    background-color: #bd2c2e;
+    border: #bd2c2e;
+    color: white;
+    box-shadow: 1px 1px 3px 1px gray;
+    display: inline-block;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+#footer hr {
+    width: 80%;
+    border-top: 1px solid grey;
+    height: 0;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 90px;
+}
+
+#footer hr:last-of-type {
+    margin-bottom: 20px;
+}
+
+#links_hours {
+    color: rgb(173, 170, 170);
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#links_table a {
+    text-decoration: none;
+    color: rgb(173, 170, 170);
+}
+
+#links_table a:hover {
+    color: blueviolet;
+}
+
+#links_table thead tr {
+    height: 50px;
+}
+
+#links_table thead tr th {
+    text-align: left;
+}
+
+#links_table thead tr th:after,
+#hours_table thead tr th:after,
+#add_table thead tr th:after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 0;
+    border-top: 2px solid #bd2c2e;
+    margin-top: 5px;
+}
+
+#links_table tr td {
+    /* border:1px solid beige; */
+    font-size: 12px;
+}
+
+#links_table tr {
+    height: 30px;
+}
+
+#hours_table thead tr {
+    height: 50px;
+}
+
+#hours_table thead tr th {
+    text-align: left;
+}
+
+#hours_table tbody tr {
+    height: 30px;
+}
+
+#hours_table td {
+    width: 120px;
+    font-size: 12px;
+}
+
+#add_table thead tr {
+    height: 50px;
+}
+
+#add_table thead tr th {
+    text-align: left;
+}
+
+#add_table tbody tr {
+    height: 30px;
+}
+
+#add_table tbody td {
+    font-size: 12px;
+}
+
+#copyright {
+    height: 50px;
+    color: rgb(173, 170, 170);
+    text-align: center;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+    #subscription fieldset {
+        border: 1px solid grey;
+    }
+    #nav-logo,
+    #nav-link,
+    #nav-reserve {
+        width: 100%;
+        height: 80px;
+        float: left;
+    }
+    #reserve_btn {
+        left: -95px;
+        float: left;
+    }
+    .info h1 {
+        font-size: 53px;
+        color: brown;
+    }
+    #reservation_form {
+        margin: 0 auto;
+        align-items: center;
+    }
+    #reservation_form label {
+        padding: 1px 2px;
+        width: 115px;
+        font-size: small;
+        text-align: right;
+    }
+    #reservation {
+        width: 90%;
+    }
+    #reserve_legend {
+        font-size: 20px;
+    }
+    #container h1 {
+        font-size: 30px;
+    }
+    #container h3 {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    #Reserve-Date,
+    #Number-of-Persons,
+    #Phone-Number {
+        text-align: left;
+        width: 100%;
+    }
+    #left-blank {
+        width: 10%;
+    }
+    #subscription fieldset {
+        height: auto;
+    }
+    #addressZip,
+    #radius,
+    #searchLocations {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .info h1 {
+        font-size: 40px;
+        color: brown;
+    }
+    #reserve_legend {
+        font-size: 15px;
+    }
+    #Reserve-Date,
+    #Number-of-Persons,
+    #Phone-Number {
+        text-align: left;
+        width: 100%;
+    }
+    #left-blank {
+        width: 0px;
+    }
+    #subscription fieldset {
+        height: auto;
+    }
+    #addressZip,
+    #radius,
+    #searchLocations {
+        width: 100%;
+    }
+}

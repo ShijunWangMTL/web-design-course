@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* MDL CSS to re-design login-registraion page 
+   Developed by: Shijun Wang  @ June 26, 2020 
+   Project members: Zongqi Lyu, Zhaohai Meng, Yaguang Liu, Shijun Wang*/ 
+
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color:rgba(0, 0, 0, 0.05);
+}
+h4 {
+   text-align: center;
+   font-weight: 400;
+   margin-top: 10px;
+}
+div.set-center {
+    margin: 50px auto;
+    width: fit-content;
+    padding: 30px;
+    background-color:#fff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px gray;
+}
+.main_table td {
+    height: 30px;
+    width: max-content;
+}
+.main_table input {
+    border-radius: 3px;
+    padding-left: 5px;
+}
+.main_submit {
+    padding: 5px 10px;
+    border-style: none;
+    background-color: rgba(197, 29, 29, 0.9);
+    color: #ffffff;
+    font-weight: bolder;
+}

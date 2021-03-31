@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page | Lorem Steakhouse</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-deep_orange.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/division_1.css">  
+    <link rel="stylesheet" type="text/css" href="styles/shop.css">  
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer-responsive.css">
+    <link rel="shortcut icon" type="images/png" href="images/logo.png" />
+    <link rel="stylesheet" href="styles/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        body{
+            background-image: url("images/whitewall2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px;
+            padding: 0px;
+        }
+        .specialbut{
+            width: 70% !important;
+            margin-left: 15% !important;
+            margin-right: 15% !important;
+            border-radius: 20px;
+            text-align: center !important;
+        }
+        .head1{
+            width: 70%;
+            margin-left: 10%;
+            margin-right: 20%;
+        }
+        .headfont{
+            font-size: 50px;
+            margin:auto; 
+            color: whitesmoke;
+            font-family: Impact, Charcoal, sans-serif;
+        }
+        #shoplogo{
+            width: 50px !important;
+            height: 50px !important;
+        }
+        .topbot50{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The drawer is always open in large screens. The header is always 
+         shown, even in small screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+        <header class="mdl-layout__header back">
+            <!-- Top row, always visible -->
+            <div class="mdl-layout__header-row head1 hide">
+                <!-- Title -->
+                <a href="index.html"><img id="shoplogo" src="images/logo_copy.png" ></a>
+                <span class="mdl-layout-title headfont" >Shop</span>
+            </div>
+
+            <!-- Tabs -->
+            <div class="mdl-layout__tab-bar  mdl-js-ripple-effect hide">
+                <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Steak</a>
+                <a href="#scroll-tab-2" class="mdl-layout__tab">Seasoning</a>
+                <a href="#scroll-tab-3" class="mdl-layout__tab">Mugs</a>
+                <a href="#scroll-tab-4" class="mdl-layout__tab">Tableware</a>
+                <a href="#scroll-tab-5" class="mdl-layout__tab">Vinegar</a>
+                <a href="#scroll-tab-6" class="mdl-layout__tab">Other</a>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer" style="border-radius: 10px !important;">
+            <span class="mdl-layout-title">Lorem Steakhouse</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="menu.html">Menu</a>
+                <a class="mdl-navigation__link" href="locations.html">Locations</a>
+                <a class="mdl-navigation__link" href="promotions.html">Promotions</a>
+                <a class="mdl-navigation__link" href="order.html">Order</a>
+                <a class="mdl-navigation__link" href="shop.html">Shop Online</a>
+                <a class="mdl-navigation__link" href="member-club.html">Member Club</a>
+                <a class="mdl-navigation__link" href="FAQ.html">FAQ</a>
+                <button class="mdl-navigation__link uk-button uk-button-secondary uk-button-small specialbut"><a href="locations.html#reservation">Reserve</a></button>
+                <section class="hideit showit" style="margin-top: 5%;">
+                    <a href="#top" class="mdl-navigation__link">Steak</a>
+                    <a href="#scroll-tab-2" class="mdl-navigation__link">Seasoning</a>
+                    <a href="#scroll-tab-3" class="mdl-navigation__link">Mugs</a>
+                    <a href="#scroll-tab-4" class="mdl-navigation__link">Tableware</a>
+                    <a href="#scroll-tab-5" class="mdl-navigation__link">Vinegar</a>
+                    <a href="#scroll-tab-6" class="mdl-navigation__link">Other</a> 
+                </section>
+            </nav>
+        </div>
+
+        
+        <main class="mdl-layout__content">
+            <a id="top"></a>
+            <!--Start of Steak Part!-->
+            <section class="mdl-layout__tab-panel is-active main" id="scroll-tab-1">
+                <div class="uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-grid"  >
+                    <div class="uk-card topbot50  uk-animation-fade" >
+                        <div class="uk-overflow-hidden">
+                           <img src="images/meat/beef/nystrip.jpg" alt="NY Strip"  uk-scrollspy="cls: uk-animation-kenburns; repeat: true"> 
+                        </div>
+                        <section class="name">
+                            <h2>New York Strip</h2> 
+                        </section>
+                        <section class="description">
+                            <p>The strip steak is a cut of beef steaks from the short loin from a cow. 
+                                It consists of a muscle that does little work, the longissimus, making the meat particularly tender, 
+                                although not as tender as the nearby psoas major or tenderloin.
+                            </p>
+                        </section>
+                    <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <div class="uk-overflow-hidden">
+                            <img src="images/meat/beef/ribs.jpg" alt="Ribs"  uk-scrollspy="cls: uk-animation-kenburns; repeat: true"> 
+                         </div>
+                        <section class="name">
+                        <h2>Ribs</h2> 
+                        </section>
+                        <section class="description">
+                            <p>Ribs of pork, beef, lamb, and venison are a cut of meat. The term ribs usually refers to the less meaty part of the chops, often cooked as a slab.</p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <div class="uk-overflow-hidden">
+                            <img src="images/meat/beef/tenderloin.jpg" alt="TenderLoin"  uk-scrollspy="cls: uk-animation-kenburns; repeat: true"> 
+                         </div>
+                        <section class="name">
+                            <h2>Beef Tenderloin</h2> 
+                        </section>
+                        <section class="description">
+                            <p>A beef tenderloin, known as an eye fillet in Australasia, 
+                                filet in France, Filet Mignon in Brazil, and fillet in the United Kingdom and South Africa, is cut from the loin of beef.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>    
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/meat/beef/tbone.jpeg" alt="T-bone Steak">
+                        <section class="name">
+                            <h2>T-bone Steak</h2> 
+                        </section>
+                        <section class="description">
+                            <p>The T-bone and porterhouse are steaks of beef cut from the short loin. 
+                                Both steaks include a "T"-shaped lumbar vertebra with sections of abdominal internal oblique muscle on each side. 
+                                Porterhouse steaks are cut from the rear end of the short loin and thus include more tenderloin steak, along with a large strip steak.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/meat/beef/flank.jpg" alt="Flank Steak">
+                        <section class="name">
+                            <h2>Flank Steak</h2> 
+                        </section>
+                        <section class="description">
+                            <p>Flank steak is a cut of beef taken from the abdominal muscles or lower chest of the steer. 
+                                French butchers refer to it as bavette, which means "bib". Similarly, it is known in Brazil as fraldinha. 
+                                The cut is common in Colombia, where it is known as sobrebarriga.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/meat/beef/skirt.jpg" alt="Skirt Steak">
+                        <section class="name">
+                            <h2>Skirt Steak</h2> 
+                        </section>
+                        <section class="description">
+                            <p>Skirt steak is a cut of beef steak from the plate. 
+                                It is long, flat, and prized for its flavor rather than tenderness. 
+                                It is not to be confused with flank steak, a generally similar adjacent cut nearer the animal's rear quarter.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>    
+                </div>
+            </section>
+
+
+            <!--Start of Seasoning Part!-->
+            <section class="mdl-layout__tab-panel main displayit" id="scroll-tab-2">
+                <div class="uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-grid"  >
+                    <div class="uk-card topbot50  uk-animation-fade" >
+                        <img src="images/Seasoning/blackpepper.jpg" alt="Black pepper">
+                        <section class="name">
+                        <h2>Black Pepper</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Pepper is a spice that’s familiar to everyone. 
+                                This slightly pungent and aromatic spice should be ground fresh for optimal flavour. 
+                                Whenever possible, opt to buy whole peppercorns and use a pepper mill instead of the pre-ground 
+                                spice to give you the most flavour and heat.
+                            </p>
+                        </section>
+                        <input type="button" class="butac expandbut" value="Add to Cart!">
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/Seasoning/chili.jpg" alt="Chili">
+                        <section class="name">
+                            <h2>Chili</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Known for a bright red or orange colour, chili powder is a combination of a variety of chilis. 
+                                Often used in taco seasoning and curries, this spice can be found with different levels of heat 
+                                (mild, medium and hot).
+                            </p>
+                        </section>
+                        <input type="button" class="butac expandbut" value="Add to Cart!">
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/Seasoning/cinnamon.png" alt="Ground cinnamon">
+                        <section class="name">
+                            <h2>Ground cinnamon</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                A warm spice packed with antioxidants, cinnamon adds a touch of sweetness to dishes. 
+                                Typically used in baking and sweet preparations, it can also be found in savoury Indian and Moroccan-style dishes.  
+                            </p>
+                        </section>
+                        <input type="button" class="butac expandbut" value="Add to Cart!">
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/Seasoning/Cumin.jpg" alt="Cumin">
+                        <section class="name">
+                            <h2>Cumin</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Warm and earthy, cumin is the world’s second most popular spice and a great addition to North African, 
+                                Middle Eastern or Indian dishes. 
+                            </p>
+                        </section>
+                        <input type="button" class="butac expandbut" value="Add to Cart!">
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/Seasoning/ginger.jpg" alt="Ground ginger">
+                        <section class="name">
+                            <h2>Ground ginger</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                It’s most often used in baking, 
+                                but ginger can also be found in spice blends such as jerk spice, curry powder or tandoori seasoning. 
+                                Its sweet, peppery-lemon notes complement both savoury and sweet dishes.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/Seasoning/paprika.jpg" alt="Smoked paprika">
+                        <section class="name">
+                            <h2>Smoked paprika</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Smoked paprika is slightly sweet with notes of smoke that can be either mild or hot. 
+                                It adds a beautiful red colour as well as some sweetness and smoky flavour to meats, fish and vegetables.
+                            </p>
+                        </section>
+                        <input type="button" class="butac expandbut" value="Add to Cart!">
+                    </div>    
+                </div>
+            </section>
+
+
+            <!--Start of Mugs Part!-->
+            <section class="mdl-layout__tab-panel main displayit" id="scroll-tab-3">
+                <div class="uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-grid"  >
+                    <div class="uk-card topbot50  uk-animation-fade" >
+                        <img src="images/Mugs/lego.jpeg" alt="Lego Mug">
+                        <section class="name">
+                        <h2>Lego Mug</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Purchase and you get a Lego Mug!
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/Mugs/lanbo.jpg" alt="Lambo Mug">
+                        <section class="name">
+                            <h2>Lambo Mug</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Purchase and you get a Lambo Mug!
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/Mugs/mad.jpg" alt="Mad Face Mug">
+                        <section class="name">
+                            <h2>Mad Face Mug</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Purchase and you get a Mad Face Mug!
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/Mugs/univorn.jpg" alt="Unicorn Mug">
+                        <section class="name">
+                            <h2>Unicorn Mug</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Purchase and you get a Unicorn Mug!
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/Mugs/hoop.jpg" alt="Hoop Mug">
+                        <section class="name">
+                            <h2>Hoop Mug</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Purchase and you get a Hoop Mug!
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/Mugs/cow.jpg" alt="Cow Mug">
+                        <section class="name">
+                            <h2>Cow Mug</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Purchase and you get a Cow Mug!
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>    
+                </div>
+            </section>
+            
+
+            <!--Start of Tableware Part!-->
+            <section class="mdl-layout__tab-panel main displayit" id="scroll-tab-4">
+                <div class="uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-grid"  >
+                    <div class="uk-card topbot50  uk-animation-fade" >
+                        <img src="images/tableware/whitep.jpg" alt="white plate">
+                        <section class="name">
+                        <h2>Stylish White Plate</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                A plate is a broad, concave, but mainly flat vessel on which food can be served.
+                                A plate can also be used for ceremonial or decorative purposes. Most plates are circular, 
+                                but they may be any shape, or made of any water-resistant material.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/tableware/greyp.jpg" alt="Grey Plate">
+                        <section class="name">
+                            <h2>Retro Grey Plate</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                A plate is a broad, concave, but mainly flat vessel on which food can be served.
+                                A plate can also be used for ceremonial or decorative purposes. Most plates are circular, 
+                                but they may be any shape, or made of any water-resistant material.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/tableware/mixedp.jpg" alt="Mixed plate">
+                        <section class="name">
+                            <h2>Trendy Mixed Color Plate</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                A plate is a broad, concave, but mainly flat vessel on which food can be served.
+                                A plate can also be used for ceremonial or decorative purposes. Most plates are circular, 
+                                but they may be any shape, or made of any water-resistant material.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/tableware/spoon.jpg" alt="Gold Spoon">
+                        <section class="name">
+                            <h2>Vintage Gold Spoon</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                A spoon is a utensil consisting of a small shallow bowl (also known as a head), oval or round, at the end of a handle. 
+                                A type of cutlery (sometimes called flatware in the United States), especially as part of a place setting, 
+                                it is used primarily for transferring food to the mouth.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/tableware/spoon2.jpg" alt="Silver Spoon">
+                        <section class="name">
+                            <h2>Fancy Silver Spoon</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                A spoon is a utensil consisting of a small shallow bowl (also known as a head), oval or round, at the end of a handle. 
+                                A type of cutlery (sometimes called flatware in the United States), especially as part of a place setting, 
+                                it is used primarily for transferring food to the mouth.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/tableware/fork.png" alt="Fork">
+                        <section class="name">
+                            <h2>Wood Fork</h2> 
+                        </section>
+                        <section class="description">
+                            <p>In cutlery or kitchenware, a fork (from the Latin furca ("pitchfork")) is a utensil, 
+                                now usually made of metal, whose long handle terminates in a head that branches into several narrow and 
+                                often slightly curved tines with which one can spear foods either to hold them to cut with a knife or to lift them to the mouth.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>    
+                </div>
+            </section>
+
+
+            <!--Start of Vinegar Part!-->
+            <section class="mdl-layout__tab-panel main displayit" id="scroll-tab-5">
+                <div class="uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-grid"  >
+                    <div class="uk-card topbot50  uk-animation-fade" >
+                        <img src="images/vinegar/applev.jpg" alt="Apple Cider Vinegar">
+                        <section class="name">
+                        <h2>Apple Vinegar</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Apple cider vinegar, or cider vinegar, is a vinegar made from fermented apple juice, 
+                                and used in salad dressings, marinades, vinaigrettes, food preservatives, and chutneys. 
+                                It is made by crushing apples, then squeezing out the juice.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/vinegar/winev.jpg" alt="Wine Vinegar">
+                        <section class="name">
+                            <h2>Wine Vinegar</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Wine vinegar is either made from red or white. 
+                                Cooks use vinegar for many purposes such as; pickling, deglazing pans, marinating meats, 
+                                making sauces and is found in certain desserts.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/vinegar/balv.jpg" alt="Balsamic Vinegar">
+                        <section class="name">
+                            <h2>Balsamic Vinegar</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Balsamic vinegar, occasionally shortened to balsamic, is a very dark, concentrated, 
+                                and intensely flavoured vinegar originating in Italy, made wholly or partially from grape must. 
+                                Grape must is freshly crushed grape juice with all the skins, seeds and stems.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/vinegar/ricev.jpg" alt="Rice Vinegar">
+                        <section class="name">
+                            <h2>Rice Vinegar</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Rice vinegar is a vinegar made from fermented rice in East Asia, as well as in Vietnam in Southeast Asia. 
+                                It can be used as a sweetener in some fries, dressings, sushi rice, etc.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/vinegar/beerv.jpg" alt="Beer Vinegar">
+                        <section class="name">
+                            <h2>Beer Vinegar</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Beer vinegar is a close cousin to malt vinegar, which you probably have encountered, at least with your fish and chips.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/vinegar/cocov.jpg" alt="Coconut vinegar">
+                        <section class="name">
+                            <h2>Coconut vinegar</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                If you can't get your Asian recipes to taste "just right," it might be because you don't have coconut vinegar -- 
+                                a white vinegar with a sharp, acidic, slightly yeasty taste. 
+                                This staple of Southeast Asian cooking is made from the sap of the coconut palm and is especially important to Thai and Indian dishes.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>    
+                </div>
+            </section>
+
+
+            <!--Start of Other Part!-->
+            <section class="mdl-layout__tab-panel main displayit" id="scroll-tab-6">
+                <div class="uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-grid"  >
+                    <div class="uk-card topbot50  uk-animation-fade" >
+                        <img src="images/skull.gif" alt="skull">
+                        <section class="name">
+                        <h2>Pic for you</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/skull.gif" alt="skull">
+                        <section class="name">
+                        <h2>Pic for you</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/skull.gif" alt="skull">
+                        <section class="name">
+                        <h2>Pic for you</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/skull.gif" alt="skull">
+                        <section class="name">
+                        <h2>Pic for you</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/skull.gif" alt="skull">
+                        <section class="name">
+                        <h2>Pic for you</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>
+                    <div class="uk-card topbot50  uk-animation-fade">
+                        <img src="images/skull.gif" alt="skull">
+                        <section class="name">
+                        <h2>Pic for you</h2> 
+                        </section>
+                        <section class="description">
+                            <p>
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                                Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt. Smt.
+                            </p>
+                        </section>
+                        <a href="" class="butac expandbut">Add to Cart!</a>
+                    </div>    
+                </div>
+            </section>
+
+            <!--Start of the Footer!-->
+            <div>
+                <footer class="page-content">
+                    <section class="subscription">
+                        <form action="subscription-complete.html" method="POST" id="subscription" autocomplete="on">
+                            <fieldset>
+                                <legend>newsletter subscription</legend>
+                                <input type="email" required="required" placeholder="Enter your email address">
+                                <input type="submit" name="submit_subscription" id="submit_subscription" value="Subscribe">
+                            </fieldset>                
+                        </form>
+                    </section>
+                    <section class="footer-info flex-container">
+                        <div class="links">
+                            <h6>LINKS</h6>
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="#">WHAT'S NEW</a></li>
+                                <li><a href="#">ORDER-TRACKING</a></li>
+                                <li><a href="#">CAREER</a></li>
+                                <li><a href="#">PRIVACY POLICY</a></li>
+                                <li><a href="#">ACCESSIBILITY</a></li>
+                            </ul>    
+                        </div>   
+                        <div class="hours">
+                            <h6>OPENING HOURS</h6>
+                            <!-- space -->
+                            <ul>
+                                <li>Monday-Friday: 11AM-10PM</li>
+                                <li>Saturday: 1PM-8PM</li>
+                                <li>Sunday: Closed</li>
+                            </ul>
+                        </div>
+                        <div class="contact">
+                            <h6>CONTACT</h6>
+                            <ul>
+                                <li>Phone: (514)234-7890</li>
+                                <li>Fax: (438)289-9000</li>
+                                <li>E-mail: <a href="mailto:contact@loremsteakhouse.com">contact@loremsteakhouse.com</a></li>
+                                <li>Address: 666 Avenue MayFair, AnyTown Q.C.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="copyright">
+                        <p>Copyright &copy; 2020 Lorem Steakhouse.</p>
+                    </section>
+                </footer>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

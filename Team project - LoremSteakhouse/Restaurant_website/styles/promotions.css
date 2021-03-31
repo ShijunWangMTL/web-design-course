@@ -1,0 +1,329 @@
+body {
+    background-color: whitesmoke;
+}
+
+#logo {
+    width: 50px;
+    height: 24px;
+    background-image: url("../images/logo_copy.png");
+    background-size: 100% 100%;
+    /* z-index: 2; */
+}
+
+#logo:hover {
+    transform: scale(1.2);
+    opacity: .7;
+}
+
+.navigation {
+    background-color: black;
+    color: white;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: blueviolet;
+}
+
+#reserve_btn {
+    position: absolute;
+    float: right;
+    margin-left: 100px;
+    width: 140px;
+    height: 30px;
+    background-color: #bd2c2e;
+    border: #bd2c2e;
+    box-shadow: 1px 1px 5px 1px gray;
+    right: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+#reserve_btn:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.header-background {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/bbq/Pork-Ribs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-background:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+}
+
+.header-background h1 {
+    line-height: 500px;
+    font-size: 120px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 3px 4px 4px rgba(255, 0, 0, 0.8);
+}
+
+h4 {
+    height: 50px;
+    font-weight: bolder;
+}
+
+h4+p {
+    height: 90px;
+}
+
+.proValue {
+    font-size: x-large;
+    color: darkgreen;
+    padding-right: 4px;
+}
+
+.oldValue {
+    font-size: x-large;
+    text-decoration: line-through;
+    padding-left: 2px;
+    padding-right: 4px;
+}
+
+.discount {
+    background-color: lightgreen;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.butac {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 30px;
+    height: 50px;
+    width: 60%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.expandbut {
+    width: 100% !important;
+    font-size: 18px !important;
+}
+
+.topbot50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a>img {
+    box-shadow: 2px 2px grey;
+    height: 230px;
+    width: 100% !important;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#footer {
+    background-color: black;
+    padding-top: 20px;
+}
+
+#subscription {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(214, 207, 207);
+}
+
+#subscription fieldset {
+    border: 1px solid grey;
+    height: 70px;
+}
+
+#subscription input:first-of-type {
+    width: 300px;
+    height: 33px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px grey;
+    padding-left: 10px;
+}
+
+#subscription input:last-of-type {
+    width: 80px;
+    height: 36px;
+    background-color: #bd2c2e;
+    border: #bd2c2e;
+    color: white;
+    box-shadow: 1px 1px 3px 1px gray;
+    display: inline-block;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+#footer hr {
+    width: 80%;
+    border-top: 1px solid grey;
+    height: 0;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 90px;
+}
+
+#footer hr:last-of-type {
+    margin-bottom: 20px;
+}
+
+#links_hours {
+    color: rgb(173, 170, 170);
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#links_table a {
+    text-decoration: none;
+    color: rgb(173, 170, 170);
+}
+
+#links_table a:hover {
+    color: blueviolet;
+}
+
+#links_table thead tr {
+    height: 50px;
+}
+
+#links_table thead tr th {
+    text-align: left;
+}
+
+#links_table thead tr th:after,
+#hours_table thead tr th:after,
+#add_table thead tr th:after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 0;
+    border-top: 2px solid #bd2c2e;
+    margin-top: 5px;
+}
+
+#links_table tr td {
+    /* border:1px solid beige; */
+    font-size: 12px;
+}
+
+#links_table tr {
+    height: 30px;
+}
+
+#hours_table thead tr {
+    height: 50px;
+}
+
+#hours_table thead tr th {
+    text-align: left;
+}
+
+#hours_table tbody tr {
+    height: 30px;
+}
+
+#hours_table td {
+    width: 120px;
+    font-size: 12px;
+}
+
+#add_table thead tr {
+    height: 50px;
+}
+
+#add_table thead tr th {
+    text-align: left;
+}
+
+#add_table tbody tr {
+    height: 30px;
+}
+
+#add_table tbody td {
+    font-size: 12px;
+}
+
+#copyright {
+    height: 50px;
+    color: rgb(173, 170, 170);
+    text-align: center;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+    #subscription fieldset {
+        border: 1px solid grey;
+    }
+    #nav-logo,
+    #nav-link,
+    #nav-reserve {
+        width: 100%;
+        height: 80px;
+        float: left;
+    }
+    #reserve_btn {
+        left: -95px;
+        float: left;
+    }
+    .header-background h1 {
+        font-size: 80px;
+    }
+    #left-blank {
+        width: 10%;
+    }
+    #addressZip,
+    #radius,
+    #searchLocations {
+        width: 100%;
+    }
+    #subscription fieldset {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header-background h1 {
+        font-size: 60px;
+    }
+    #subscription fieldset {
+        height: auto;
+    }
+    #left-blank {
+        width: 0px;
+    }
+}

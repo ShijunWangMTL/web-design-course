@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page | Lorem Steakhouse</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-orange.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/division_1.css">  
+    <link rel="stylesheet" type="text/css" href="styles/order.css">  
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer-responsive.css">
+    <link rel="shortcut icon" type="images/png" href="images/logo.png" />
+    <link rel="stylesheet" href="styles/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        body{
+            background-image: url("images/white.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px;
+            padding: 0px;
+        }
+        .topbot50{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        a > img{
+            box-shadow: 2px 2px grey;
+            height: 230px;
+            width: 100% !important;
+        }
+        h2{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .headfont{
+            font-size: 50px;
+            margin: auto; 
+            color: whitesmoke;
+            font-family: Impact, Charcoal, sans-serif;
+        }
+    </style>
+</head>
+<body>
+          <!-- The drawer is always open in large screens. The header is always 
+         shown, even in small screens. -->
+         <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class = "mdl-layout__header back">
+               <!-- Top row, always visible -->
+               <div class="mdl-layout__header-row head1 hide">
+                  <!-- Title -->
+                    <a href="index.html"><img id="shoplogo" src="images/logo_copy.png" style="box-shadow: none !important;"></a>
+                    <span class="mdl-layout-title headfont" >Order Here</span>      
+               </div>
+            
+            <!-- Tabs 
+               <div class = "mdl-layout__tab-bar mdl-js-ripple-effect">
+                  <a href = "#scroll-tab-1" class = "mdl-layout__tab is-active">Tab 1</a>
+                  <a href = "#scroll-tab-2" class = "mdl-layout__tab">Tab 2</a>
+                  <a href = "#scroll-tab-3" class = "mdl-layout__tab">Tab 3</a>     
+               </div>
+            -->
+
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Lorem Steakhouse</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="menu.html">Menu</a>
+                    <a class="mdl-navigation__link" href="locations.html">Locations</a>
+                    <a class="mdl-navigation__link" href="promotions.html">Promotions</a>
+                    <a class="mdl-navigation__link" href="order.html">Order</a>
+                    <a class="mdl-navigation__link" href="shop.html">Shop Online</a>
+                    <a class="mdl-navigation__link" href="member-club.html">Member Club</a>
+                    <a class="mdl-navigation__link" href="FAQ.html">FAQ</a>
+                    <button class="mdl-navigation__link uk-button uk-button-secondary uk-button-small specialbut"><a href="locations.html#reservation">Reserve</a></button>
+                    <br><hr><br>
+                    <a href="#Entrée" class="mdl-navigation__link">Entrée</a>
+                    <a href="#Appetizer" class="mdl-navigation__link">Appetizer</a>
+                    <a href="#Dessert" class="mdl-navigation__link">Dessert</a>
+                    <a href="#Wine" class="mdl-navigation__link">Wine</a>
+                </nav>
+            </div>
+
+
+
+             <main class = "mdl-layout__content">
+                 <form class="main" action="">
+
+                    <h2 id="Entrée">Entrée</h2>
+
+                    <div class="uk-child-width-1-5@l uk-child-width-1-3@m uk-child-width-1-2@s uk-text-center uk-grid"  >
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/beef/flank.jpg">
+                                <img src="images/meat/beef/flank.jpg" alt="flank">
+                            </a>
+                            <label for="flank">
+                                Beef Flank &nbsp; 20oz $50
+                            </label>
+                            <br>
+                            <input type="number" id="flank" name="flank" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/beef/nystrip.jpg">
+                                <img src="images/meat/beef/nystrip.jpg" alt="NYstrip">
+                            </a>
+                            <label for="nystrip">
+                                NY Strip  &nbsp; 18oz $45
+                            </label>
+                            <br>
+                            <input type="number" id="nystrip" name="nystrip" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/beef/ribs.jpg">
+                                <img src="images/meat/beef/ribs.jpg" alt="rib">
+                            </a>
+                            <label for="rib">
+                                Rib Eye &nbsp; 20oz $60
+                            </label>
+                            <br>
+                            <input type="number" id="rib" name="rib" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/beef/tbone.jpeg">
+                                <img src="images/meat/beef/tbone.jpeg" alt="TB">
+                            </a>
+                            <label for="tbon">
+                                T-Bone &nbsp; 26oz $50
+                            </label>
+                            <br>
+                            <input type="number" id="tbon" name="tbon" class="input80" min="0" max="5" value="0">
+                        </div>
+
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/beef/skirt.jpg">
+                                <img src="images/meat/beef/skirt.jpg" alt="skirt">
+                            </a>
+                            <label for="skirt">
+                                Beef Skirt &nbsp; 22oz $50
+                            </label>
+                            <br>
+                            <input type="number" id="skirt" name="skirt" class="input80" min="0" max="5" value="0">
+                        </div>
+
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/beef/tenderloin.jpg">
+                                <img src="images/meat/beef/tenderloin.jpg" alt="tender">
+                            </a>
+                            <label for="tender">
+                                TenderLoin &nbsp; 27oz $55
+                            </label>
+                            <br>
+                            <input type="number" id="tender" name="tender" class="input80" min="0" max="5" value="0">
+                        </div>
+
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/lob.jpg">
+                                <img src="images/meat/lob.jpg" alt="lob">
+                            </a>
+                            <label for="lob">
+                                Lobster &nbsp; $95
+                            </label>
+                            <br>
+                            <input type="number" id="lob" name="lob" class="input80" min="0" max="5" value="0">
+                        </div>
+
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/duck.jpg">
+                                <img src="images/meat/duck.jpg" alt="duck">
+                            </a>
+                            <label for="duck">
+                                Duck Breast &nbsp; $45
+                            </label>
+                            <br>
+                            <input type="number" id="duck" name="duck" class="input80" min="0" max="5" value="0">
+                        </div>
+
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/chi.jpg">
+                                <img src="images/meat/chi.jpg" alt="chi">
+                            </a>
+                            <label for="chi">
+                                Chicken &nbsp; $75
+                            </label>
+                            <br>
+                            <input type="number" id="chi" name="chi" class="input80" min="0" max="5" value="0">
+                        </div>
+
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/lamb.jpeg">
+                                <img src="images/meat/lamb.jpeg" alt="lam">
+                            </a>
+                            <label for="lam">
+                                Lamb &nbsp; $65
+                            </label>
+                            <br>
+                            <input type="number" id="lam" name="lam" class="input80" min="0" max="5" value="0">
+                        </div>
+
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/vag.jpeg">
+                                <img src="images/meat/vag.jpeg" alt="vag">
+                            </a>
+                            <label for="vag">
+                                Vegan &nbsp; $35
+                            </label>
+                            <br>
+                            <input type="number" id="vag" name="vag" class="input80" min="0" max="5" value="0">
+                        </div>
+
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/meat/vege.jpg">
+                                <img src="images/meat/vege.jpg" alt="vege">
+                            </a>
+                            <label for="vege">
+                                Vegetarian &nbsp; $35
+                            </label>
+                            <br>
+                            <input type="number" id="vege" name="vege" class="input80" min="0" max="5" value="0">
+                        </div>
+
+                        
+                    </div>
+
+                    <h2 id="Appetizer">Appetizer</h2>
+
+                    <div class="uk-child-width-1-5@l uk-child-width-1-3@m uk-child-width-1-2@s uk-text-center uk-grid"  >
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/app/calamari.jpg">
+                                <img src="images/app/calamari.jpg" alt="cala">
+                            </a>
+                            <label for="cala">
+                                Calamari &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="cala" name="cala" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/app/shrimpmartini.jpg">
+                                <img src="images/app/shrimpmartini.jpg" alt="shrimp">
+                            </a>
+                            <label for="shrimp">
+                                Shrimp Martini &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="shrimp" name="shrimp" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/app/calamari.jpg">
+                                <img src="images/app/smokedsal.jpg" alt="ssal">
+                            </a>
+                            <label for="ssal">
+                                Smoked Salmon &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="ssal" name="ssal" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/app/smokedsausage.jpg">
+                                <img src="images/app/smokedsausage.jpg" alt="ssausage">
+                            </a>
+                            <label for="ssausage">
+                                Smoked Sausage &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="ssausage" name="ssausage" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/app/riceroll.jpeg">
+                                <img src="images/app/riceroll.jpeg" alt="riceroll">
+                            </a>
+                            <label for="riceroll">
+                                Rice Roll &nbsp; $15
+                            </label>
+                            <br>
+                            <input type="number" id="riceroll" name="riceroll" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/app/smokedsausage.jpg">
+                                <img src="images/app/wings.jpg" alt="wings">
+                            </a>
+                            <label for="wings">
+                                Chicken Wings &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="wings" name="wings" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/app/smokedsausage.jpg">
+                                <img src="images/app/gardensalad.jpg" alt="gsalad">
+                            </a>
+                            <label for="gsalad">
+                                Garden Salad  &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="gsalad" name="gsalad" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/app/greeksalad.jpg">
+                                <img src="images/app/greeksalad.jpg" alt="greek">
+                            </a>
+                            <label for="greek">
+                                Greek Salad &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="greek" name="greek" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/app/mexicansalad.jpg">
+                                <img src="images/app/mexicansalad.jpg" alt="mexi">
+                            </a>
+                            <label for="mexi">
+                                Mexican Salad &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="mexi" name="mexi" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/Salad/sigsalad.jpg">
+                                <img src="images/Salad/sigsalad.jpg" alt="sigsalad">
+                            </a>
+                            <label for="sigsalad">
+                                Signature Salad &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="sigsalad" name="sigsalad" class="input80" min="0" max="5" value="0">
+                        </div>
+                    </div>
+                    
+
+                    
+                    <h2 id="Dessert">Dessert</h2>
+
+                    <div class="uk-child-width-1-5@l uk-child-width-1-3@m uk-child-width-1-2@s uk-text-center uk-grid"  >
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/cake/chocolatec.jpg">
+                                <img src="images/cake/chocolatec.jpg" alt="chocolatec">
+                            </a>
+                            <label for="chocolatec">
+                                Chocolate Cake &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="chocolatec" name="chocolatec" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/cake/rainbowc.jpg">
+                                <img src="images/cake/rainbowc.jpg" alt="rainbow">
+                            </a>
+                            <label for="rainbow">
+                                Rainbow Cake &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="rainbow" name="rainbow" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/cake/pinkdripc.jpg">
+                                <img src="images/cake/pinkdripc.jpg" alt="pinkdrip">
+                            </a>
+                            <label for="pinkdrip">
+                                Pink Drip &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="pinkdrip" name="pinkdrip" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/cake/raspberryc.jpg">
+                                <img src="images/cake/raspberryc.jpg" alt="rasc">
+                            </a>
+                            <label for="rasc">
+                                Raspberry Cake &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="rasc" name="rasc" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/cake/redvelvetc.jpg">
+                                <img src="images/cake/redvelvetc.jpg" alt="redvelc">
+                            </a>
+                            <label for="redvelc">
+                                Red Velvet &nbsp; $15
+                            </label>
+                            <br>
+                            <input type="number" id="redvelc" name="redvelc" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/cake/turkeyc.jpg">
+                                <img src="images/cake/turkeyc.jpg" alt="turkey">
+                            </a>
+                            <label for="turkey">
+                                Turkey Cake &nbsp; 25
+                            </label>
+                            <br>
+                            <input type="number" id="turkey" name="turkey" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/cake/icec.jpg">
+                                <img src="images/cake/icec.jpg" alt="icec">
+                            </a>
+                            <label for="icec">
+                                Icecream Cake &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="icec" name="icec" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/cake/lavac.jpg">
+                                <img src="images/cake/lavac.jpg" alt="lavac">
+                            </a>
+                            <label for="lavac">
+                                Lava Cake &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="lavac" name="lavac" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/cake/doughnut.jpg">
+                                <img src="images/cake/doughnut.jpg" alt="dou">
+                            </a>
+                            <label for="dou">
+                                Doughnet &nbsp; $15
+                            </label>
+                            <br>
+                            <input type="number" id="dou" name="dou" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/cake/mousse.jpg">
+                                <img src="images/cake/mousse.jpg" alt="mousses">
+                            </a>
+                            <label for="mousses">
+                                Chocolate Mousses &nbsp; $25
+                            </label>
+                            <br>
+                            <input type="number" id="mousses" name="mousses" class="input80" min="0" max="5" value="0">
+                        </div>
+                    </div>
+                    
+
+
+                    <h2 id="Wine">Wine</h2>
+                    <div class="uk-child-width-1-5@l uk-child-width-1-3@m uk-child-width-1-2@s uk-text-center uk-grid"  >
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/wine/redwine.jpg">
+                                <img src="images/wine/redwine.jpg" alt="red">
+                            </a>
+                            <label for="red">
+                                Red Wine &nbsp; $95
+                            </label>
+                            <br>
+                            <input type="number" id="red" name="red" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/wine/white.png">
+                                <img src="images/wine/white.png" alt="white">
+                            </a>
+                            <label for="white">
+                                White Wine &nbsp; $95
+                            </label>
+                            <br>
+                            <input type="number" id="white" name="white" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/wine/rum.jpg">
+                                <img src="images/wine/rum.jpg" alt="rum">
+                            </a>
+                            <label for="rum">
+                                Rum &nbsp; $95
+                            </label>
+                            <br>
+                            <input type="number" id="rum" name="rum" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/wine/vodka.jpg">
+                                <img src="images/wine/vodka.jpg" alt="vod">
+                            </a>
+                            <label for="vod">
+                                Vodka &nbsp; $75
+                            </label>
+                            <br>
+                            <input type="number" id="vod" name="vod" class="input80" min="0" max="5" value="0">
+                        </div>
+                        <div class="uk-card topbot50  uk-animation-fade">
+                            <a target="_blank" href="images/wine/whiskey.jpg">
+                                <img src="images/wine/whiskey.jpg" alt="whis">
+                            </a>
+                            <label for="whis">
+                                Whiskey &nbsp; $95
+                            </label>
+                            <br>
+                            <input type="number" id="whis" name="whis" class="input80" min="0" max="5" value="0">
+                        </div>
+                    </div>
+                    <input type="submit" class="submitbut" value="Order Now!">
+                 </form>
+
+<!--
+                <section class = "mdl-layout__tab-panel is-active" id = "scroll-tab-1">
+                   <div class = "page-content">Tab 1 Contents</div>
+                </section>
+                <section class = "mdl-layout__tab-panel" id = "scroll-tab-2">
+                   <div class = "page-content">Tab 2 Contents</div>
+                </section>
+                <section class = "mdl-layout__tab-panel" id = "scroll-tab-3">
+                   <div class = "page-content">Tab 3 Contents</div>
+                </section>
+-->               
+                
+                
+                
+                
+                
+                
+                
+                <!--Start of Footer Part!-->
+                <div>
+                    <footer class="page-content">
+                        <section class="subscription">
+                            <form action="subscription-complete.html" method="POST" id="subscription" autocomplete="on">
+                                <fieldset>
+                                    <legend>newsletter subscription</legend>
+                                    <input type="email" required="required" placeholder="Enter your email address">
+                                    <input type="submit" name="submit_subscription" id="submit_subscription" value="Subscribe">
+                                </fieldset>                
+                            </form>
+                        </section>
+                        <section class="footer-info flex-container">
+                            <div class="links">
+                                <h6>LINKS</h6>
+                                <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="#">WHAT'S NEW</a></li>
+                                    <li><a href="#">ORDER-TRACKING</a></li>
+                                    <li><a href="#">CAREER</a></li>
+                                    <li><a href="#">PRIVACY POLICY</a></li>
+                                    <li><a href="#">ACCESSIBILITY</a></li>
+                                </ul>    
+                            </div>   
+                            <div class="hours">
+                                <h6>OPENING HOURS</h6>
+                                <!-- space -->
+                                <ul>
+                                    <li>Monday-Friday: 11AM-10PM</li>
+                                    <li>Saturday: 1PM-8PM</li>
+                                    <li>Sunday: Closed</li>
+                                </ul>
+                            </div>
+                            <div class="contact">
+                                <h6>CONTACT</h6>
+                                <ul>
+                                    <li>Phone: (514)234-7890</li>
+                                    <li>Fax: (438)289-9000</li>
+                                    <li>E-mail: <a href="mailto:contact@loremsteakhouse.com">contact@loremsteakhouse.com</a></li>
+                                    <li>Address: 666 Avenue MayFair, AnyTown Q.C.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="copyright">
+                            <p>Copyright &copy; 2020 Lorem Steakhouse.</p>
+                        </section>
+                    </footer>
+                </div>
+            </main>
+</body>
+</html>

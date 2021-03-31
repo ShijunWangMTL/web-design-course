@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+/*
+    CSS document for the Lorem steakhouse
+    Developed by: Zongqi Lyv, Zhaohai Meng, Shijun Wang, Yaguang Liu
+    Script date: June 28,2020
+*/
+
+/* styling header part */
+.header-wrapper{
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(16,16,16,0.8),rgba(16,16,16,0.5),rgba(16,16,16,0.3),rgba(204,204,204,0.5));
+    position: fixed;
+    left:0;
+    top: 0;
+    z-index: 99;
+}
+.header_container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+
+}
+
+/* make changes to the layout for the different size screen */
+@media screen and (max-width:1024px){
+    .nav_container a{
+        font-size:1em;
+    }
+
+}
+@media screen and (min-width: 1025px){
+    .nav_container a{
+        font-size:1.2em;
+    }
+}
+@media screen and (min-width:840px){
+    .mdl-layout__drawer-button{
+        display: none;
+    }
+
+}
+/* when the screen size is below 840px, the following elements will change the display status*/
+@media screen and (max-width:840px){
+    .mdl-layout__drawer-button{
+        display: block;
+    }
+    #small_layout_logo, .nav_container,#reserve_btn{
+        display: none;
+    }
+
+}
+
+.project_logo{
+    margin-left:5px;
+}
+.project_logo img{
+    height: 60px;
+    width: 60px;
+    animation: rotate 1s ease-in 1;
+}
+@keyframes rotate {
+    from{
+        transform: rotateY(45deg);
+    }
+    to{
+        transform: rotateY(90deg);
+    }
+
+}
+
+.nav_container{
+    text-align: center;
+}
+.nav_container a{
+    text-decoration: none;
+    color:whitesmoke;
+    position:relative;
+}
+.nav_container a::after{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    margin-top:5px;
+    background-color: #bd2c2e;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.nav_container a:hover{
+    color:#666;
+}
+.nav_container a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav_container a:nth-of-type(-n+6){
+    margin-right:0.5em;
+}
+#reserve_btn,#event_btn, #member_btn,#sub_btn,#drawer_reserve_btn{
+    background-color:  #bd2c2e;
+    border-radius: 5px;
+}/* end styling the header part */
+
+/* begin styling the drawer part */
+.project_drawer{
+    position: fixed;
+    float: left;
+    /* top:80px;
+    left:0; */
+    z-index: 100;
+    height: 100vh;
+}
+.drawer_logo_img{
+    /* border:1px solid teal; */
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+}
+#logo_img{
+    height:80%;
+    width: 50%;
+}
+.drawer_btn_container{
+    width: 99%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* styling the banner part, in this part, the background images are made animated using keyframes*/
+.banner_part{
+    height: 50em;
+    min-height: 50em;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top:-80px;
+    color:whitesmoke;
+
+}
+.banner_part .bg_slides:after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(closest-side,rgba(16,16,16,0.2),rgba(0,0,0,0.5),rgba(0,0,0,0.7), rgba(0,0,0,0.8));
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+}
+.banner_part .bg_slides {
+    width: 400%;
+    height: 100%;
+    animation: move 10s step-start infinite;
+
+}
+.slide_img{
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    float: left;
+}
+@keyframes move {
+    0%,15%{margin-left: 0;}
+    25%, 40%{margin-left: -100%;}
+    55%,70%{margin-left:-200%}
+    85%,100%{margin-left: -300%;}
+}
+
+.banner_desc{
+    position: absolute;
+    float:left;
+    top: 30%;
+
+}
+.banner_desc{
+    text-align: center;
+}
+.banner_desc>p{
+    text-align: left;
+}
+
+/* styling menu display part, making animation for the menu item images*/
+.menu_display_container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 16px auto;
+    border-radius: 5px;
+
+}
+.menu_item_img img{
+    width: 100%;
+    height: 100%;
+    animation: enter 1s ease 1;
+}
+
+@keyframes enter {
+    0%{
+        transform: scale(0);
+    }
+    20%{
+        transform: scale(0.2);
+    }
+    40%{
+        transform: scale(0.4);
+    }
+    60%{
+        transform: scale(0.6);
+    }
+    80%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+.menu_item_img img:hover{
+    opacity:0.6;
+}
+
+#menu_desc_1, #menu_desc_2,#menu_desc_3, #menu_desc_4{
+    margin-top: 30px;
+}
+@media screen and (max-width:480px){
+    #menu_desc_1, #menu_desc_2,#menu_desc_3, #menu_desc_4{
+        margin-top: 0;
+    }
+    
+}
+
+/* styling the service part */
+.service_display_container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.service_part {
+    background-color: black;
+    color:whitesmoke;
+    margin-top: 16px;
+}
+.service_item_img img{
+    width: 50%;
+    height: 50%;
+}
+.service_item_img img:hover{
+   transform:scale(1.1);
+}
+
+/* styling member part */
+.member_display_container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.member_img img{
+    width: 100%;
+    height: 100%;
+}
+.member_img{
+    position: relative;
+}
+.member_img:after{
+    display: block;
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: radial-gradient(closest-side,rgba(16,16,16,0.2),rgba(0,0,0,0.5),rgba(0,0,0,0.7), rgba(0,0,0,0.8));;
+
+}
+
+/* styling footer part */
+.footer_wrapper{
+    color:#ccc;
+    font-size:12px;
+    padding-top:15px;
+    background-color: black;
+}
+.footer_container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.footer_container fieldset{
+    border:1px solid #ccc;
+    width: 50%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.footer_container input[type="email"]{
+    width: 60%;
+    padding: 10px 0;
+    margin-right: 0.5em;
+    border-radius: 5px;
+    padding-left: 0.5em;
+}
+@media screen and (min-width: 760px){
+    .banner_desc{
+        width: 50%;
+        left:25%;
+    }
+}
+@media screen and (max-width:760px){
+    .footer_container fieldset{
+        width: 90%;
+    }
+    .banner_desc{
+        width: 80%;
+        left:10%;
+    }
+    .banner_desc>p:first-of-type{
+        display: none;
+    }
+}
+.footer_container fieldset legend {
+    font-size:20px;
+}
+.link_hour_contact h6{
+    font-weight: bold;
+}
+
+.link_part ol li a{
+    text-decoration: none;
+    font-size:12px;
+    color:#ccc;
+    letter-spacing: 0;
+}
+.link_part ol li {
+    min-height: 24px;
+}
+.contact_part a{
+    text-decoration: none;
+    color:#ccc;
+}
+.link_part hr, .hour_part hr, .contact_part hr{
+    width: 20%;
+    border:1px solid #bd2c2e;
+    background-color: #bd2c2e;
+    text-align: left;
+}
+.copyright_part{
+    height: 50px;
+    line-height: 50px;
+}
+.media_list a{
+    background: url("../images/social4.png") no-repeat 0 0;
+    width: 42px;
+    height: 40px;
+    display: inline-block;
+
+}
+.media_list a:nth-of-type(2){
+    background-position: -74px 0;
+}
+.media_list a:last-of-type{
+    background-position:-148px 0;
+}
+
+/*created some general class for the webpage*/
+.no-padding{
+    padding:0;
+}
+.no-padding-vertical{
+    padding-top:0;
+    padding-bottom: 0;
+}
+.no-padding-horizontal{
+    padding-left: 0;
+    padding-right: 0;
+}
+.no-margin{
+    margin:0;
+}
+.no-margin-top{
+    margin-top:0;
+
+}
+.no-margin-bottom{
+    margin-bottom: 0;
+}
+.text-align-center{
+    text-align: center;
+}
+
+   

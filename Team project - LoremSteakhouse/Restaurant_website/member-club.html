@@ -1,0 +1,140 @@
+<!--Purpose: using mdl to re-design Member Club page-->
+<!--Developed by: Shijun Wang @ June 27, 2020 -->
+<!--Project members: Zongqi Lyu, Zhaohai Meng, Yaguang Liu, Shijun Wang-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Club | Lorem Steakhouse</title>
+    <link rel="shortcut icon" type="images/png" href="images/logo.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="styles/header-responsive-hidden-drawer-mdl.css" />
+    <link rel="stylesheet" href="styles/footer-responsive.css" />
+    <link rel="stylesheet" href="styles/member-club.css" />
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+        <!-- header starts: shown on large screen, display none on smaller screens -->  
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row nav_hidden">
+                <nav class="mdl-navigation">                            
+                    <a class="logo" href="index.html"><img src="images/logo_copy.png" alt="logo" /></a>
+                    <a class="mdl-navigation__link" href="menu.html">Menu</a>|
+                    <a class="mdl-navigation__link" href="locations.html">Locations</a>|
+                    <a class="mdl-navigation__link" href="promotions.html">Promotions</a>|
+                    <a class="mdl-navigation__link" href="order.html">Order</a>|
+                    <a class="mdl-navigation__link" href="shop.html">Shop</a>|
+                    <a class="mdl-navigation__link" href="member-club.html">Member Club</a>|                        
+                    <a class="mdl-navigation__link" href="FAQ.html">FAQ</a>
+                    <a class="mdl-navigation__link" href="locations.html"><span class="reserve_btn">Reserve</span></a>
+                </nav>  
+            </div>
+        </header>
+        <!-- header ends -->
+
+        <!-- hidden drawer starts -->
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title"><a href="index.html">Lorem Steakhouse</a></span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="locations.html">Reserve Table</a>
+                <a class="mdl-navigation__link" href="menu.html">Menu</a>
+                <a class="mdl-navigation__link" href="locations.html">Locations</a>
+                <a class="mdl-navigation__link" href="promotions.html">Promotions</a>
+                <a class="mdl-navigation__link" href="order.html">Order</a>
+                <a class="mdl-navigation__link" href="shop.html">Shop</a>
+                <a class="mdl-navigation__link" href="member-club.html">Member Club</a>
+                <a class="mdl-navigation__link" href="FAQ.html">FAQ</a>
+            </nav>  
+        </div>
+        <!-- hidden drawer ends -->
+
+        <!-- main content starts -->
+        <main class="main_container">
+            <div class="login_btn">
+                <a href="login-registration-mdl.html" >ACCOUNT LOGIN</a>
+            </div>
+            <div class="content_container">
+                <section class="how-to-join">
+                    <h2>How to join</h2>
+                    <a href="login-registration-mdl.html"><img class="club-image" src="images/joinmember-icon.png" alt="how to join" /></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam magna est, laoreet in porttitor placerat, consectetur aliquam ante. Vivamus in risus fermentum, scelerisque mi a, egestas ex. Ut dignissim hendrerit aliquet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam magna est, laoreet in porttitor placerat, consectetur aliquam ante. Vivamus in risus fermentum, scelerisque mi a, egestas ex. Ut dignissim hendrerit aliquet.</p>
+                    <div>
+                        <a class="club_btn" href="login-registration-mdl.html">Join now</a>  
+                    </div>
+                </section>
+                <section class="earn-points">
+                    <h2>Earn points</h2>
+                    <a href="login-registration-mdl.html"><img class="club-image" src="images/points-icon.png" alt="earn points" /></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam magna est, laoreet in porttitor placerat, consectetur aliquam ante. Vivamus in risus fermentum, scelerisque mi a, egestas ex. Ut dignissim hendrerit aliquet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam magna est, laoreet in porttitor placerat, consectetur aliquam ante. Vivamus in risus fermentum, scelerisque mi a, egestas ex. Ut dignissim hendrerit aliquet.</p>
+                    <a class="club_btn" href="login-registration-mdl.html">Check points</a>
+                </section>
+                <section class="rewards">
+                    <h2>Rewards</h2>
+                    <a href="login-registration-mdl.html"><img class="club-image" src="images/rewards-icon.png" alt="rewards" /></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam magna est, laoreet in porttitor placerat, consectetur aliquam ante. Vivamus in risus fermentum, scelerisque mi a, egestas ex. Ut dignissim hendrerit aliquet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam magna est, laoreet in porttitor placerat, consectetur aliquam ante. Vivamus in risus fermentum, scelerisque mi a, egestas ex. Ut dignissim hendrerit aliquet.</p>
+                    <a class="club_btn" href="login-registration-mdl.html">Redeem points</a>
+                </section>
+                <section class="benefits">
+                    <h2>Benefits</h2>
+                    <a href="#"><img class="club-image" src="images/benefit-icon.png" alt="benefits" /></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam magna est, laoreet in porttitor placerat, consectetur aliquam ante. Vivamus in risus fermentum, scelerisque mi a, egestas ex. Ut dignissim hendrerit aliquet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam magna est, laoreet in porttitor placerat, consectetur aliquam ante. Vivamus in risus fermentum, scelerisque mi a, egestas ex. Ut dignissim hendrerit aliquet.</p>
+                    <a class="club_btn" href="#">More benefits</a>
+                </section>           
+            </div>
+        </main>
+        <!-- main content ends -->
+
+        <!-- footer starts -->
+        <footer class="page-content">
+            <section class="subscription">
+                <form action="subscription-complete.html" method="POST" id="subscription" autocomplete="on">
+                    <fieldset>
+                        <legend>newsletter subscription</legend>
+                        <input type="email" required="required" placeholder="Enter your email address">
+                        <input type="submit" name="submit_subscription" id="submit_subscription" value="Subscribe">
+                    </fieldset>                
+                </form>
+            </section>
+            <section class="footer-info flex-container">
+                <div class="links">
+                    <h6>LINKS</h6>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">WHAT'S NEW</a></li>
+                        <li><a href="#">ORDER-TRACKING</a></li>
+                        <li><a href="#">CAREER</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">ACCESSIBILITY</a></li>
+                    </ul>    
+                </div>   
+                <div class="hours">
+                    <h6>OPENING HOURS</h6>
+                    <ul>
+                        <li>Monday-Friday: 11AM-10PM</li>
+                        <li>Saturday: 1PM-8PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h6>CONTACT</h6>
+                    <ul>
+                        <li>Phone: (514)234-7890</li>
+                        <li>Fax: (438)289-9000</li>
+                        <li>E-mail: <a href="mailto:contact@loremsteakhouse.com">contact@loremsteakhouse.com</a></li>
+                        <li>Address: 666 Avenue MayFair, AnyTown Q.C.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="copyright">
+                <p>Copyright &copy; 2020 Lorem Steakhouse.</p>
+            </section>
+        </footer>
+        <!-- footer ends -->
+    </div>     
+</body>
+</html>

@@ -1,0 +1,83 @@
+/*
+Laughacademy - Group Project
+Filename: core.css
+Made by: Douglas Vinicio, Ian Laporte, German Acevedo and Shijun Wang
+*/
+
+/* ==========================================================================
+    General Section / Header - Body - Footer
+   ========================================================================== */
+.container {
+    max-width: 800px;
+}
+
+/*  Fonts and Colors */ 
+p, small{
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 20px;
+    text-align: center;
+}
+
+li {
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.navbar-brand, h1, h2, h3, h4{
+    font-family: Bubblegum Sans;
+    color: #D96704 !important;
+    text-align: center;
+}
+
+/*  Navbar */ 
+#navbarText, .nav-link, .btn-outline-primary {
+    font-family: Mulish;
+    color: #D96704 !important;
+    border-color: #D96704;
+}
+
+.btn-outline-primary:hover {
+    background-color: white;
+}
+
+/* Resizing Logo in Navbar */ 
+.logo-navbar {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+/* ==========================================================================
+    Responsive Configurations 
+   ========================================================================== */
+   @media(max-width:580px){
+    .navbar-brand, h1, h2{
+        font-size: 20px;
+    }
+    /* Aligning logo while mobile */
+    .logo-navbar {
+        margin-right: 20px;
+        margin-bottom: 0px;
+    }
+
+    .social-media-icon {
+        margin-bottom: 10px;
+        width: 40px !important;
+        height: auto;
+    }
+
+  }
+  @media (min-width: 768px){
+    .navbar {
+        padding: 0% 10% 0% 10%;
+    }
+}
+
+/* Especial rule for line between @Copyright */
+@media (min-width:576px){
+    .copyright-divider{
+        display: none;
+    }
+}
+
+

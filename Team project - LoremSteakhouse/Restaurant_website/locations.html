@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- student name: Zhaohai Meng-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>locations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+    <link rel="stylesheet" href="styles/locations.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <section class="uk-flex uk-flex-wrap uk-flex-wrap-around uk-background-muted navigation">
+        <div class="uk-width-1-6 navigation" id="nav-logo">
+            <div class="uk-card uk-card-default uk-card-body navigation">
+                <a href="index.html">
+                    <div id="logo">
+
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="uk-width-auto navigation" id="nav-link">
+            <div class="uk-card uk-card-default uk-card-body navigation">
+                <a href="menu.html">Menu</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="locations.html">Locations</a>&nbsp;&nbsp; |&nbsp;&nbsp;
+                <a href="promotions.html">Promotions</a>&nbsp;&nbsp; |&nbsp;&nbsp;
+                <a href="order.html">Order</a>&nbsp;&nbsp; |&nbsp;&nbsp;
+                <a href="shop.html">Shop Online</a>&nbsp;&nbsp; |&nbsp;&nbsp;
+                <a href="member-club.html">Member Club</a>&nbsp;&nbsp; |&nbsp;&nbsp;
+                <a href="FAQ.html">FAQ</a>
+            </div>
+        </div>
+        <div class="uk-width-1-6 navigation" id="nav-reserve">
+            <div class="uk-card uk-card-default uk-card-body navigation">
+                <form action="locations.html#reservation">
+                    <input id="reserve_btn" type="submit" value="Reserve Table">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-text-center" id="background">
+        <div class="uk-width-auto">
+            <div class="uk-card uk-card-default uk-card-body info">
+                <h1>Our Locations</h1>
+            </div>
+        </div>
+        <div class="uk-grid">
+            <div class="uk-width-auto">
+                &nbsp;
+            </div>
+            <div class="uk-width-auto">
+                <div class="uk-card uk-card-default uk-card-body uk-width-auto info">
+                    <form id="reservation_form" method="post" autocomplete="on" class="uk-flex uk-flex-wrap uk-flex-wrap-around uk-width-auto" onsubmit="alert('Thank you. Your table has been reserved!')">
+                        <fieldset id="reservation">
+                            <legend id="reserve_legend">Find your table in our restaurant</legend>
+                            <div class="uk-flex uk-flex-wrap">
+                                <div class="uk-width-1-3" id="Reserve-Date">
+                                    <label for="reserve_date">Reserve Date</label>
+                                    <input type="datetime-local" id="reserve_date" required="required" />
+                                </div>
+                                <div class="uk-width-1-3" id="Number-of-Persons">
+                                    <label for="reserve_num">Number of Persons</label>
+                                    <input type="number" id="reserve_num" min="1" required="required" value="Number of Persons" />
+                                </div>
+                                <div class="uk-width-1-4" id="Phone-Number">
+                                    <label for="reserve_phone">Phone Number</label>
+                                    <input type="tel" id="reserve_phone" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" required="required" />
+                                </div>
+                            </div>
+                            <div class="uk-flex uk-flex-wrap">
+                                <div class="uk-width-1-3">
+                                    &nbsp;
+                                </div>
+                                <div class="uk-width-1-3">
+                                    <input id="reserve_submit" type="submit" value="reserve" />
+                                </div>
+                                <div class="uk-width-1-3">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="uk-width-1-4">
+                &nbsp;
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-text-center" id="container">
+        <div class="uk-width-auto">
+            <div class="uk-card uk-card-default uk-card-body">
+                <h1>Search locations</h1>
+            </div>
+        </div>
+        <div class="uk-grid uk-child-width-1-3">
+            <div class="uk-card uk-card-default uk-card-body" id="addressZip">
+                <h3>ENTER ADDRESS OR ZIP CODE:</h3>
+                <input id="wpsl-search-input" type="text" value="" name="wpsl-search-input" placeholder="" aria-required="true" aria-label="Enter Your Address or Zip Code" style="height:30px;width:200px;" />
+            </div>
+            <div class="uk-card uk-card-default uk-card-body" id="radius">
+                <h3>RADIUS:</h3>
+                <select id="wpsl-radius-dropdown" class="wpsl-dropdown">
+                        <option value="10">10 mi</option><option value="25">25 mi</option><option selected="selected" value="50">50 mi</option><option value="100">100 mi</option><option value="200">200 mi</option><option value="500">500 mi</option>
+                    </select>
+            </div>
+            <div class="uk-card uk-card-default uk-card-body" id="searchLocations">
+                <button id="wpsl-search-btn" type="button" style="background-color: #7ED321;height:60px;width:150px;" onclick="document.getElementById( 'wpsl-gmap').style.display='block'">Search</button>
+            </div>
+        </div>
+        <div class="uk-width-auto">
+            <div class="divMap">
+                <img id="wpsl-gmap" src="images/MontrealMap.JPG" usemap="#googlemap" style="display:none;"></img>
+                <map name="googlemap">
+                    <area shape="rect" coords="0,0,1500,1000" href="https://www.google.com/maps" alt="Map"/>
+                </map>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="uk-text-center">
+        <div class="uk-width-auto">
+            <form action="subscription-complete.html" method="POST" id="subscription" autocomplete="on" class="uk-width-auto">
+                <fieldset>
+                    <legend>EMAIL SIGN-UP</legend>
+                    <input type="email" required="required" placeholder="Enter your email address">
+                    <input type="submit" name="submit_subscription" id="submit_subscription" value="Join Us">
+                </fieldset>
+            </form>
+        </div>
+        <hr />
+
+        <div class="uk-grid" id="links_hours">
+            <div class="uk-width-1-5" id="left-blank">&nbsp;</div>
+            <div class="uk-width-1-5">
+                <table id="links_table">
+                    <thead>
+                        <tr>
+                            <th>LINKS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="index.html">HOME</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">WHAT'S NEW</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">ORDER-TRACKING</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">CAREER</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">PRIVACY POLICY</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">ACCESSIBILITY</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="uk-width-1-5">
+                <table id="hours_table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">OPENING HOURS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="weekdays">Monday-Friday:</td>
+                            <td>11AM-10PM</td>
+                        </tr>
+                        <tr>
+                            <td class="weekdays">Saturday:</td>
+                            <td>1PM-8PM</td>
+                        </tr>
+                        <tr>
+                            <td class="weekdays">Sunday:</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="uk-width-1-5">
+                <table id="add_table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">CONTACT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="add_item">
+                                PHONE:
+                            </td>
+                            <td>
+                                (514)234-7890
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="add_item">
+                                FAX:
+                            </td>
+                            <td>
+                                (438)289-9000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="add_item">EMAIL:</td>
+                            <td>lorem.steakhouse@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td class="add_item">ADDRESS:</td>
+                            <td>666 Avenue MayFair, AnyTown Q.C.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="uk-width-1-5">&nbsp;</div>
+        </div>
+        <hr />
+
+        <section id="copyright" class="uk-width-auto">
+            Copyright &copy; 2020 Lorem Steakhouse.
+        </section>
+    </footer>
+</body>
+
+</html>

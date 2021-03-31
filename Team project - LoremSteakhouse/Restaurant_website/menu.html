@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Menu | Lorem Steakhouse</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="shortcut icon" href="images/logo_copy.png" type="images/png">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+<!--
+    using MDL framework to create the menu page of Lorem Steakhouse
+    Developed by: Zongqi Lyv, Zhaohai Meng, Shijun Wang, Yaguang Liu
+    Script date: 28 June, 2020
+-->
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="layout_container">
+        <!-- header part start -->
+
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="layout_container">
+            <!-- header part start -->
+            <header class="mdl-layout__header header-wrapper">
+                <div class="mdl-layout__header-row header_container no-padding" >
+                    <div class="mdl-layout-title mdl-logo project_logo" id="small_layout_logo">
+                       <a href="index.html"><img src="images/logo_copy.png" alt="a pic of logo"></a>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--8-col nav_container"  >
+                        <a href="menu.html" class="nav_item">Menu</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="locations.html" class="nav_item">Locations</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="promotions.html" class="nav_item">Promotions</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="order.html" class="nav_item">Order</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="shop.html" class="nav_item">Shop</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="member-club.html" class="nav_item">Member</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="faq.html" class="nav_item">FAQ</a>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col project_btn_container" >
+                       <a href="locations.html" ><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent project_btn" id="reserve_btn">Reserve</button></a>
+                    </div>
+                </div>
+            </header><!-- header part end -->
+
+            <!-- drawer part start -->
+            <div class="mdl-layout__drawer mdl-layout mdl-js-layout project_drawer">
+                <div class="mdl-layout__title drawer_logo_img">
+                   <a href="index.html"><img src="images/logo_copy.png" id="logo_img" alt="a pic of logo"></a>
+                </div>
+
+                <nav class="mdl-navigation drawer_nav">
+                    <a href="menu.html" class="mdl-navigation__link">
+                       <i class="material-icons">menu_book</i> Menu</a>
+                    <a href="locations.html" class="mdl-navigation__link"><i class="material-icons">place</i> Locations</a>
+                    <a href="promotions.html" class="mdl-navigation__link"><i class="material-icons">emoji_events</i> Promotions</a>
+                    <a href="order.html" class="mdl-navigation__link"><i class="material-icons">list_alt</i> Order</a>
+                    <a href="shop.html" class="mdl-navigation__link"><i class="material-icons">shopping_cart</i> Shop</a>
+                    <a href="member-club.html" class="mdl-navigation__link"><i class="material-icons">loyalty</i> Member</a>
+                    <a href="faq.html" class="mdl-navigation__link"><i class="material-icons">live_help</i> FAQ</a>
+                    <div class="mdl-cell project_drawer_btn_container" >
+                        <a href="locations.html" ><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent project_btn" id="drawer_reserve_btn">Reserve</button></a>
+                    </div>
+                </nav>
+
+            </div><!-- drawer part end -->
+        </div>
+
+        <!-- main part start-->
+        <main class="mdl-layout__content">
+            <div class="mdl-grid menu_container no-padding">
+                <div class="mdl-cell mdl-cell--12-col mdl-layout-title">
+                    <h6>Menu / Home </h6>
+                </div>
+
+                <section class="mdl-cell mdl-grid mdl-cell--12-col no-padding menu_item">
+                    <div class="mdl-cell mdl-cell--12-col mdl-layout-title no-padding text-align-center" id="salad_item">
+                        <h4>Appetizer / Salad</h4>
+                        <hr>
+                    </div>
+
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/soup-1.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Soup</div>
+                                <div class="mdl-cell mdl-cell--4-col">$5.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/mushroom.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Mushroom</div>
+                                <div class="mdl-cell mdl-cell--4-col">$5.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/shrimp.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Soup</div>
+                                <div class="mdl-cell mdl-cell--4-col">$5.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/appetizer.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Soup</div>
+                                <div class="mdl-cell mdl-cell--4-col">$5.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col text-align-center">
+                       <a href="order.html" id="salad_menu"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent to_order_btn">Order Now</button></a>
+                    </div>
+
+                </section>
+
+                <section class="mdl-cell mdl-grid mdl-cell--12-col no-padding menu_item" >
+                    <div class="mdl-cell mdl-cell--12-col mdl-layout-title no-padding text-align-center" id="steak_item">
+                        <h4>Steak</h4>
+                        <hr>
+                    </div>
+
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/steak1.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Steak</div>
+                                <div class="mdl-cell mdl-cell--4-col">$55.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/steak2.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Steak</div>
+                                <div class="mdl-cell mdl-cell--4-col">$65.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/steak4.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Soup</div>
+                                <div class="mdl-cell mdl-cell--4-col">$35.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/CajunSteak.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Steak</div>
+                                <div class="mdl-cell mdl-cell--4-col">$45.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col text-align-center">
+                        <a href="order.html" id="steak_menu"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent to_order_btn">Order Now</button></a>
+                    </div>
+
+                </section>
+
+                <section class="mdl-cell mdl-grid mdl-cell--12-col no-padding menu_item" >
+                    <div class="mdl-cell mdl-cell--12-col mdl-layout-title no-padding text-align-center" id="drink_item">
+                        <h4>Drink</h4>
+                        <hr>
+                    </div>
+
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/water.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Water</div>
+                                <div class="mdl-cell mdl-cell--4-col">$0.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/brandy.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Brandy</div>
+                                <div class="mdl-cell mdl-cell--4-col">$25.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/cocktail1.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Cocktail</div>
+                                <div class="mdl-cell mdl-cell--4-col">$15.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/juice.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Juice</div>
+                                <div class="mdl-cell mdl-cell--4-col">$5.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col text-align-center">
+                       <a href="order.html" id="drink_menu"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent to_order_btn">Order Now</button></a>
+                    </div>
+
+                </section>
+
+                <section class="mdl-cell mdl-grid mdl-cell--12-col no-padding menu_item">
+                    <div class="mdl-cell mdl-cell--12-col mdl-layout-title no-padding text-align-center"  id="dessert_item">
+                        <h4>Dessert</h4>
+                        <hr>
+                    </div>
+
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/cheesecake.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Cheesecake</div>
+                                <div class="mdl-cell mdl-cell--4-col">$6.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/chocolate.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Chocolate</div>
+                                <div class="mdl-cell mdl-cell--4-col">$5.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--4dp">
+                        <div class="mdl-cell mdl-cell--12-col-tablet menu_img">
+                            <img src="images/cupcake.jpg" alt="a pic of soup" class="menu_item_img">
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col">
+                            <div class="mdl-cell mdl-cell--12-col mdl-grid no-margin no-padding">
+                                <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet">Cupcake</div>
+                                <div class="mdl-cell mdl-cell--4-col">$2.99</div>
+                            </div>
+                            <hr>
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi corrupti</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--12-col text-align-center">
+                        <a href="order.html" id="dessert_menu"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent to_order_btn">Order Now</button></a>
+                    </div>
+
+                </section>
+
+            </div><!-- main part end -->
+
+            <!-- footer part start -->
+            <footer class="mdl-mega-footer mdl-grid footer_wrapper">
+                <div class="footer_container mdl-cell mdl-cell--12-col text-align-center">
+                    <div class="mdl-mega-footer--top-section">
+                        <form action="subscription-complete.html" method="POST" autocomplete="on">
+                            <fieldset>
+                                <legend>Newsletter Subscription</legend>
+                                <input type="email" name="email" id="email" placeholder="Please enter your email" required="required">
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="sub_btn">Subscribe</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <hr>
+
+                    <div class="mdl-mega-footer--middle-section mdl-grid link_hour_contact">
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet link_part" style="text-align: left;">
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <h6>LINKS</h6>
+                                <hr>
+                                <ul class="mdl-list no-padding">
+
+                                        <li class="mdl-list__item no-padding"><a href="">HOME</a></li>
+
+
+                                        <li class="mdl-list__item no-padding"><a href="">WHAT'S NEW</a></li>
+
+
+                                        <li class="mdl-list__item no-padding"><a href="">ORDER-TRACKING</a></li>
+
+
+                                        <li class="mdl-list__item no-padding"><a href="">CAREER</a></li>
+
+
+                                        <li class="mdl-list__item no-padding"> <a href="">PRIVACY</a></li>
+
+
+                                        <li class="mdl-list__item no-padding"><a href="">ACCESSIBILITY</a></li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+                        <div class="mdl-cell mdl-grid mdl-cell--4-col mdl-cell--12-col-tablet hour_part no-padding no-margin" style="text-align:left;">
+                            <div class="mdl-cell mdl-cell--12-col no-padding">
+                                <h6>HOURS</h6>
+                                <hr>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>MONDAY - FRIDAY:</td>
+                                            <td>11AM - 11PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SATURDAY:</td>
+                                            <td>1PM - 11PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SUNDAY:</td>
+                                            <td>CLOSED</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                             </div>
+
+                        </div>
+                        <div class="mdl-cell mdl-grid mdl-cell--4-col mdl-cell--12-col-tablet contact_part no-padding no-margin" style="text-align:left;">
+                            <div class="mdl-cell mdl-cell--12-col no-padding">
+                                <h6>CONTACT</h6>
+                                <hr>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>PHONE:</td>
+                                            <td>(514)234-2300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FAX:</td>
+                                            <td>(438)123-9000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EMAIL:</td>
+                                            <td><a href="">lorem.steakhouse@gmail.com</a> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ADDRESS:</td>
+                                            <td>666 Av. AnyRode,Anytown, Q.C. </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                        </div>
+                    </div>
+                    <hr class="no-margin-top no-margin-bottom">
+
+                    <div class="mdl-mega-footer--bottom-section copyright_media no-padding no-margin" >
+                        <div class="mdl-mega-footer--left-section copyright_part no-padding no-margin" >
+                            Copyright &copy;2020 Lorem Steakhouse.
+                        </div>
+                        <div class="mdl-mega-footer--right-section media_list no-margin no-padding" >
+                            <a href="https://twitter.com/explore" target="_blank" class="mdl-cell media_icons no-margin-bottom "></a>
+                            <a href="https://www.facebook.com/" target="_blank" class="mdl-cell media_icons no-margin-bottom "></a>
+                            <a href="https://www.whatsapp.com/" target="_blank" class="mdl-cell media_icons no-margin-bottom "></a>
+                        </div>
+                    </div>
+                </div>
+            </footer><!-- footer part ends -->
+        </main>
+
+
+    </div>
+
+
+</body>
+</html>
